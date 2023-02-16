@@ -1,4 +1,5 @@
 ![Copyright.png](Copyright.png)
+
 Copyright [2023] [Daniel Fernández López]
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -61,6 +62,6 @@ make jar
 ```shell
 make javadoc
 ```
-## Diagrama:
+## Diagrama de clases:
 
-![Copyright.png](.png)
+![Copyright.png](Diagrama.png)
