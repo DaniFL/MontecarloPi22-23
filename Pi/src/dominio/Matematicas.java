@@ -46,7 +46,8 @@ public class Matematicas {
         }
         // Área del círculo = PI * radio^2
         // Área del cuadrado = lado^2
-        // PI = Área del círculo / Área del cuadrado // PI = (aciertos / n) * (lado^2) / radio^2
+        // PI = Área del círculo / Área del cuadrado
+        // PI = (aciertos / n) * (lado^2) / radio^2
         double areaCirculo = areaCuadrado * (aciertos / n);
         return areaCirculo / Math.pow(radio, 2);
     }
