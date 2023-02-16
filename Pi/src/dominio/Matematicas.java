@@ -31,22 +31,23 @@ public class Matematicas {
      */
     public static double calcularPi(int n) {
 
-        int aciertos = 0; // número de puntos dentro del círculo
+        double aciertos = 0.0;
+        double areaCuadrado = 4.0;
+        double radio = 1.0;
 
-        // generar (n) puntos aleatorios
         Random rand = new Random(); // generador de números aleatorios
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             double x = rand.nextDouble(); // coordenada x
             double y = rand.nextDouble(); // coordenada y
-            if (x * x + y * y <= 1) { // punto dentro del círculo
+            if ((x * x) + (y * y) <= 1) {
+                n++;
                 aciertos++;
             }
         }
-
-        // calcular el valor aproximado de Pi
-        double areaCirculo = aciertos / (double) n;
-        double areaCuadrado = 1;
-        double pi = (areaCirculo * 4) / areaCuadrado;
-        return pi;
+        // Área del círculo = PI * radio^2
+        // Área del cuadrado = lado^2
+        // PI = Área del círculo / Área del cuadrado // PI = (aciertos / n) * (lado^2) / radio^2
+        double areaCirculo = areaCuadrado * (aciertos / n);
+        return areaCirculo / Math.pow(radio, 2);
     }
 }
