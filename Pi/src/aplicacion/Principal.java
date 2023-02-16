@@ -18,6 +18,8 @@ package aplicacion;
 
 import dominio.Matematicas;
 
+import java.util.Scanner;
+
 /**
  * Clase Principal que alberga el método main del programa.
  */
@@ -28,7 +30,10 @@ public class Principal {
      * @param args argumentos que recibe el programa.
      */
     public static void main(String[] args) {
-        // Muestra por pantalla el valor de PI.
-        System.out.println("El valor de PI es: " + Matematicas.calcularPi(1000000));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el número de puntos a generar: ");
+        int n = sc.nextInt();
+        sc.close();
+        System.out.println("El valor de PI es: " + Matematicas.calcularPi(n));
     }
 }

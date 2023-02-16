@@ -29,20 +29,27 @@ El método de Monte Carlo consiste en inscribir una circunferencia dentro un cua
 igual que uno de los lados del cuadrado) y mediante la generación de puntos aleatorios sobre la superficie dibujada se establece
 una relación entre los puntos interiores (aciertos) y puntos totales; con la que se podrá llevar a cabo la aproximción al número Pi.
 
-En este programa hemos definido tres variables:
-- n: puntos que quedan por tirar.
-- d: número de aciertos, es decir, cuantos puntos caen dentro de la circunferencia.
-- intentos: número de puntos a tirar.
+En este programa hemos definido las siguientes variables:
+- n: número de intentos.
+- aciertos: cuantos puntos caen dentro de la circunferencia.
+- pi: aproximación al número Pi.
+- x: coordenada x del punto generado.
+- y: coordenada y del punto generado.
+- areaCirculo: área del círculo inscrito.
+- areaCuadrado: área del cuadrado.
+
 
 ## Comandos:
 
+**NOTA:** Debido a la estructura del proyecto, es necesario ejecutar los comandos desde la carpeta raíz del proyecto, es decir,
+la carpeta Pi, donde se encuentra el archivo makefile.
+
 * Ejecución código:
 ```shell
-java -jar ap-Matematicas.jar X 
+java -jar principal.jar  
 ```
 
-Donde X determina el número de intentos, por ejemplo 1000.
-Aunque también es posible ejecutar el programa mediante el comando:
+* Aunque también es posible ejecutar el programa mediante el comando:
 
 ```shell
 make ejecutar
@@ -65,3 +72,6 @@ make javadoc
 ## Diagrama de clases:
 
 ![Copyright.png](Diagrama.png)
+
+## Animación:
+![Copyright.png](draw.gif)
