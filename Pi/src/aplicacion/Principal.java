@@ -25,6 +25,6 @@ public class Principal {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        System.out.println(Matematicas.piMontecarlo(1000000));
+        System.out.println("El valor de PI es: " + Matematicas.calcularPi(1000000));
     }
 }

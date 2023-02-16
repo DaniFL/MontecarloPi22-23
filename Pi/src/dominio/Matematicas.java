@@ -13,16 +13,27 @@
 
 package dominio;
 
+import java.util.Random;
 public class Matematicas {
-    public static double piMontecarlo(int n) {
-        int dentro = 0;
+
+    public static double calcularPi(int n) {
+
+        int inside = 0; // número de puntos dentro del círculo
+
+        // generar n puntos aleatorios
+        Random rand = new Random();
         for (int i = 0; i < n; i++) {
-            double x = Math.random();
-            double y = Math.random();
-            if (x * x + y * y <= 1) {
-                dentro++;
+            double x = rand.nextDouble(); // coordenada x
+            double y = rand.nextDouble(); // coordenada y
+            if (x * x + y * y <= 1) { // punto dentro del círculo
+                inside++;
             }
         }
-        return 4.0 * dentro / n;
+
+        // calcular el valor aproximado de Pi
+        double circleArea = inside / (double) n;
+        double squareArea = 1;
+        double pi = (circleArea * 4) / squareArea;
+        return pi;
     }
 }
