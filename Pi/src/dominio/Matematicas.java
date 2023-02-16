@@ -11,6 +11,9 @@
  either express or implied. See the License for the specific
  language governing permissions and limitations under theLicense.*/
 
+/**
+ * Paquete dominio que contiene la clase Matemáticas.
+ */
 package dominio;
 
 import java.util.Random;

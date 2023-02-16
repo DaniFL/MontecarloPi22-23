@@ -11,6 +11,9 @@
  either express or implied. See the License for the specific
  language governing permissions and limitations under theLicense.*/
 
+/**
+ * Paquete aplicacion que contiene la clase Principal.
+ */
 package aplicacion;
 
 import dominio.Matematicas;
